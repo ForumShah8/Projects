@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<center>
+	<div>
+		<h1>
+			SURVEY FOR PROGRAMMING LANGUAGES KNOWN 
+		</h1>
+	</div>
+
+<form >
+	<label>YOUR FULL NAME: </label>
+	<br>
+	<input type="text" name="fullname" value="" required="required" placeholder="Enter your name here" class="input">
+	<br>
+	<br>
+	<label>EMAIL ADDRESS: </label>
+	<br>
+	<input type="email" name="email" value="" required="required" placeholder="Enter your email here" class="input">
+	<br>
+	<br>
+	<label>AGE: </label>
+	<br>
+	<input type="number" name="age" value="" required="required" placeholder="Enter your age here" class="input">
+	<br>
+	<br>
+	<label>WHAT OPTION BEST DESCRIBES YOU? </label>
+	<br>
+	<select placeholder="Select an option" name="occupation">
+		<option value=" " selected hidden="">SELECT AN OPTION  </option>
+		<option value="Student">STUDENT </option>
+		<option value="Teacher">TEACHER </option>
+		<option value="Employee">EMPLOYEE </option>
+		<option value="Other">OTHER </option>
+	</select>
+	<br>
+	<br>
+	<label>PROGRAMMING LANGUAGES KNOWN <br><SMALL>(SELECT ONE OR MORE)</SMALL></label>
+	<br>
+	<input type="checkbox" name="languages[]" value="C">
+	<label>C</label>
+	<br>
+	<input type="checkbox" name="languages[]" value="C++">
+	<label>C++</label>
+	<br>
+	<input type="checkbox" name="languages[]" value="JAVA">
+	<label>JAVA</label>
+	<br>
+	<input type="checkbox" name="languages[]" value="PYTHON">
+	<label>PYTHON</label>
+	<br>
+	<input type="checkbox" name="languages[]" value="HTML">
+	<label>HTML</label>
+	<br>
+	<input type="checkbox" name="languages[]" value="CSS">
+	<label>CSS</label>
+	<br>
+	<input type="checkbox" name="languages[]" value="NONE">
+	<label>NONE OF THE ABOVE</label>
+	<br>
+	<br>
+	<label>SUGGESTIONS OR FEEDBACK: <small>(OPTIONAL)</small></label>
+	<br>
+	<textarea rows="3" cols="50"></textarea>
+	<br>
+	<br>
+	<center>
+	<input type="submit" name="" value="SUBMIT" class="submitbtn">
+	<input type="reset" name="" value="RESET" class="resetbtn">
+</center>
+</form>
+</center>
+</body>
+</html>
