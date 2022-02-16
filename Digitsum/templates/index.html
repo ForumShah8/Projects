@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Sum of Digits </title>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../static/base.css">
+    </head>
+    <body>
+        <center>
+        <h2> Enter the Digits You want to add, and then Press Enter.</h2>
+        </center>
+        <br> 
+        <br>
+        <center> 
+            <div class= "div1"> 
+                <div class= "div2">
+                {%for items in list%}
+                {{items}}
+                {% endfor %}   
+                
+               {{sum}}
+                
+                </div>
+                
+                <hr class="hr1">
+                <div class="div3">
+                    <form method="POSt" action = "/result">
+                    <input type = "submit" value = "1" name = "btn" class="btn1 btnleft">
+                    <input type = "submit" value = "2" name = "btn" class="btn1">
+                    <input type = "submit" value = "3" name = "btn" class="btn1">
+                    <input type = "submit" value = "4" name = "btn" class="btn1">
+                    <input type = "submit" value = "5" name = "btn" class="btn1 btnright">
+                    <br> 
+                    <input type = "submit" value = "6" name = "btn" class="btn1 btnleft">
+                    <input type = "submit" value = "7" name = "btn" class="btn1">
+                    <input type = "submit" value = "8" name = "btn" class="btn1">
+                    <input type = "submit" value = "9" name = "btn" class="btn1">
+                    <input type = "submit" value = "0" name = "btn" class="btn1 btnright">
+                    <br> 
+                    <input type = "submit" value="ENTER" name="btn"class="btn2">
+                    <a href="/"><input type = "button" value="RESET" class="btn2"></a>
+                    </form>
+                </div>
+            </div>
+    </body>
+    </html>
